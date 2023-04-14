@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    font-size: 1rem;
+    font-family: 'Montserrat Alternates', Helvetica, sans-serif;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    
+    padding: 30px 40px;
+    width: 100%;
+    min-width: 500px;
+}
+
+.new-task-container {
+    background-color: gainsboro;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.new-task-container input {
+    flex: 3;
+    font-size: 1rem;
+    border: 2px solid #d1d3d4;
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: 500;
+}
+
+.new-task-container input:focus {
+    outline: none;
+    border-color: wheat;
+}
+
+.new-task-button {
+    flex: 1;
+    border-radius: 50px;
+    font-weight: 500;
+    height: 100%;
+    font-size: 1rem;
+    border: none;
+    background-color: #41b883;
+    color: #fff;
+    padding: 12px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.tasks-container {
+    background-color: #fff;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    
+}
+
+/*utilidade*/
+
+.error {
+    border: 2px solid red !important;
+
+}
+
+.error::placeholder {
+    color: red;
+}
+.task-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 2px;
+}
+
+.delete-task{
+    background-color: #41b883;
+    color: fff;
+    padding: 10px;
+    margin-top: 5;
+    border-radius: 50%;
+}
+
+.completed{
+    text-decoration: line-through;
+}
+span{
+    color:red;
+}
+
+.responsavel{
+    color: gray;
+    margin-left: 50%;
+}
+.descricao{
+
+}
+.header-task, .responsavel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 200px;
+}
